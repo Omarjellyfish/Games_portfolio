@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "https://omarjellyfish.github.io/Games_portfolio/static/css/main.7e11e2f5.css",
-    "main.js": "https://omarjellyfish.github.io/Games_portfolio/static/js/main.cc8c1614.js",
+    "main.js": "https://omarjellyfish.github.io/Games_portfolio/static/js/main.3a561c84.js",
     "static/media/Oxanium.ttf": "https://omarjellyfish.github.io/Games_portfolio/static/media/Oxanium.50bb18b058c797a89438.ttf",
     "static/media/PhoenixGaming.ttf": "https://omarjellyfish.github.io/Games_portfolio/static/media/PhoenixGaming.52b75a56ef9f70c20259.ttf",
     "static/media/ZenDots.ttf": "https://omarjellyfish.github.io/Games_portfolio/static/media/ZenDots.ad9e0d65654bb49213b6.ttf",
     "static/media/PixelGame.otf": "https://omarjellyfish.github.io/Games_portfolio/static/media/PixelGame.a7040ee1df82fd46813b.otf",
     "index.html": "https://omarjellyfish.github.io/Games_portfolio/index.html",
     "main.7e11e2f5.css.map": "https://omarjellyfish.github.io/Games_portfolio/static/css/main.7e11e2f5.css.map",
-    "main.cc8c1614.js.map": "https://omarjellyfish.github.io/Games_portfolio/static/js/main.cc8c1614.js.map"
+    "main.3a561c84.js.map": "https://omarjellyfish.github.io/Games_portfolio/static/js/main.3a561c84.js.map"
   },
   "entrypoints": [
     "static/css/main.7e11e2f5.css",
-    "static/js/main.cc8c1614.js"
+    "static/js/main.3a561c84.js"
   ]
 }
