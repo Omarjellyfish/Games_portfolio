@@ -3,10 +3,10 @@ import { AboutMeData, Game, GameEngine, LinkImageSource, MediaType, Platform } f
 export const PersonalInfo: AboutMeData = {
   name: "Omar Kandil",
   role: "Unity Game Developer",
-  introduction: "Trained at ATHR as a game developer with unity for 10 days. Experience as an AI data trainer and a MERN stack trainee at DEPI.",
+  introduction: "Trained at ATHR as a game developer with unity. Experience as an AI data trainer and a MERN stack trainee at DEPI.",
   description: "Flexibilty and creativity makes me distinct from most developers, with my deep understanding of OOP DS and Algorithms makes me able to find my way through most frameworks. having a vast range of experience in different fields due to my work as an AI data trainer where i completed over 200 tasks and became a reviewer on some projects, proving my adaptability to different enviroments and workflows.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
-  cvUri: `${process.env.PUBLIC_URL}/files/YOUR_CV.pdf`,
+  cvUri: `${process.env.PUBLIC_URL}/files/Omar Kandil CV.pdf`,
   links: {
     github: "https://github.com/Omarjellyfish",
     itchIO: "https://NAME.itch.io",
@@ -28,7 +28,7 @@ export const games: Game[] = [
     ],
     media: [
       { source: "/images/games/Match_Master/bigboard.png", type: MediaType.Image },
-      { source: "/images/games/Match_Master/matchmaster.mp4", type: MediaType.YouTube },
+      { source: "/images/games/Match_Master/matchmaster.mp4", type: MediaType.Video },
       { source: "/images/games/Match_Master/bomb.png", type: MediaType.Image },
       { source: "/images/games/Match_Master/smallboard.png", type: MediaType.Image },
     
@@ -37,7 +37,7 @@ export const games: Game[] = [
   {
     name: "Flappy Bird Clone ",
     description: `Flappy bird like game with a couple menus`,
-    genres: ["i dont know lol", "..."],
+    genres: ["clones", "..."],
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
     links: [
@@ -46,7 +46,7 @@ export const games: Game[] = [
     ],
     media: [
       { source: "/images/games/Flappy/flappymenu.png", type: MediaType.Image },
-      { source: "/images/games/Flappy/flappy.mp4", type: MediaType.YouTube },
+      { source: "/images/games/Flappy/flappy.mp4", type: MediaType.Video },
       { source: "/images/games/Flappy/flappy_end.png", type: MediaType.Image },
       { source: "/images/games/Flappy/flappy_scene.png", type: MediaType.Image },
 
@@ -64,7 +64,7 @@ export const games: Game[] = [
     ],
     media: [
       { source: "/images/games/movement/movement1.png", type: MediaType.Image },
-      { source: "/images/games/movement/movement.mp4", type: MediaType.YouTube },
+      { source: "/images/games/movement/movement.mp4", type: MediaType.Video },
       { source: "/images/games/movement/movement2.png", type: MediaType.Image },
 
     ],

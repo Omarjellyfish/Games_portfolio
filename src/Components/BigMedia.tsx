@@ -4,7 +4,7 @@ import { MediaItem, MediaType } from "../types";
 import { Row } from "../Styles/StyledComponents";
 
 const MediaWrapper = styled(Row)`
-justify-content: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -26,6 +26,17 @@ const MediaImage = styled.img`
   max-height: 300px;
   object-fit: contain;
   cursor: pointer;
+`;
+
+const MediaVideo = styled.video`
+  width: 70%;
+  height: auto;
+  max-height: 300px;
+  outline: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const PopupOverlay = styled.div`
@@ -61,7 +72,11 @@ const BigMedia: React.FC<MediaItem> = ({ source, type }) => {
   };
 
   const getYouTubeEmbedUrl = (url: string) => {
-    return`${url}?autoplay=1&mute=1`;
+    // force embed-friendly format
+    if (url.includes("watch?v=")) {
+      return url.replace("watch?v=", "embed/") + "?autoplay=1&mute=1";
+    }
+    return `${url}?autoplay=1&mute=1`;
   };
 
   return (
@@ -73,14 +88,28 @@ const BigMedia: React.FC<MediaItem> = ({ source, type }) => {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
+        ) : type === MediaType.Video ? (
+          <MediaVideo controls>
+            <source
+              src={`${process.env.PUBLIC_URL}${source}`}
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </MediaVideo>
         ) : (
-          <MediaImage src={`${process.env.PUBLIC_URL}${source}`} alt="Game Media" />
+          <MediaImage
+            src={`${process.env.PUBLIC_URL}${source}`}
+            alt="Game Media"
+          />
         )}
       </MediaWrapper>
 
-      {isPopupOpen && (
+      {isPopupOpen && type === MediaType.Image && (
         <PopupOverlay onClick={() => setIsPopupOpen(false)}>
-          <PopupImage src={`${process.env.PUBLIC_URL}${source}`} alt="Enlarged Media" />
+          <PopupImage
+            src={`${process.env.PUBLIC_URL}${source}`}
+            alt="Enlarged Media"
+          />
         </PopupOverlay>
       )}
     </>
