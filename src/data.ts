@@ -7,6 +7,7 @@ export const PersonalInfo: AboutMeData = {
   description: "Flexibilty and creativity makes me distinct from most developers, with my deep understanding of OOP DS and Algorithms makes me able to find my way through most frameworks. having a vast range of experience in different fields due to my work as an AI data trainer where i completed over 200 tasks and became a reviewer on some projects, proving my adaptability to different enviroments and workflows.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
   cvUri: `${process.env.PUBLIC_URL}/files/Omar Kandil CV.pdf`,
+  uiUri:`${process.env.PUBLIC_URL}/files/UI.pdf`,
   links: {
     github: "https://github.com/Omarjellyfish",
     itchIO: "https://NAME.itch.io",

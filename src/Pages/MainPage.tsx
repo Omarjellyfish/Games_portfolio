@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import Game from "../Components/Game";
 import { games } from "../data";
 import { Column } from "../Styles/StyledComponents";
-
+import DocumentViewer from "../Components/DocumentViewer";
 const GamesContainer = styled(Column)`
   gap: 100px;
   padding: 20px;
@@ -30,6 +30,5 @@ const MainPage: React.FC = () => (
     ))}
   </GamesContainer>
 );
-
 
 export default MainPage;

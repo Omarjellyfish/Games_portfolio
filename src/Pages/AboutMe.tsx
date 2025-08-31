@@ -52,11 +52,12 @@ const AboutMe: React.FC = () => {
   return (
     <Container>
       <ProfileImage src={PersonalInfo.image} alt="Your Name" />
-      <AboutText>
-       {PersonalInfo.description}
-      </AboutText>
+      <AboutText>{PersonalInfo.description}</AboutText>
       <CVButton href={`${PersonalInfo.cvUri}`} download>
         Download My CV
+      </CVButton>
+      <CVButton href={`${PersonalInfo.uiUri}`} download>
+        Check out my presentation on UI UX
       </CVButton>
     </Container>
   );

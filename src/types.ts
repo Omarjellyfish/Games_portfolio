@@ -36,6 +36,7 @@ export interface AboutMeData {
   introduction: string;
   image: string;
   cvUri: string;
+  uiUri:string,
   links: {
     github: string;
     itchIO: string;
