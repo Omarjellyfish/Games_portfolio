@@ -68,5 +68,40 @@ export const games: Game[] = [
       { source: "/images/games/movement/movement2.png", type: MediaType.Image },
 
     ],
+  },
+  {
+    name: "Web battleship game ",
+    description: `classic battle ship game made with html css js`,
+    genres: ["guessing", "..."],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Web,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/Projects" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/battleship/battle1.png", type: MediaType.Image },
+      { source: "/images/games/battleship/battleship.mp4", type: MediaType.Video },
+      { source: "/images/games/battleship/battle2.png", type: MediaType.Image },
+
+    ],
+  },
+  {
+    name: "offline dino game ",
+    description: `chrome dino game using python with opengl and turtle`,
+    genres: ["jumping", "..."],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Other,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/Projects" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/dino/dino1.png", type: MediaType.Image },
+      { source: "/images/games/dino/dino.mp4", type: MediaType.Video },
+      { source: "/images/games/dino/dino2.png", type: MediaType.Image },
+      { source: "/images/games/dino/dino3.png", type: MediaType.Image },
+
+    ],
   }
 ];

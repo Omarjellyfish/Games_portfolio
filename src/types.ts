@@ -14,6 +14,8 @@ export enum Platform {
 export enum GameEngine {
   Unity = "Unity",
   Unreal = "Unreal",
+  Web="Web",
+  Other="Other"
 }
 
 export enum MediaType {
