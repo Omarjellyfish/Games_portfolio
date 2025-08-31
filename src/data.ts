@@ -35,6 +35,24 @@ export const games: Game[] = [
     ],
   },
   {
+    name: "FPS Movement game",
+    description: `An FPS game where u have movement mechanics, interactions with the enviroment and abilities.`,
+    genres: ["FPS", "Movement"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/FPS-Movement-Game" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/fps/fps1.png", type: MediaType.Image },
+      { source: "/images/games/fps/fps.mp4", type: MediaType.Video },
+      { source: "/images/games/fps/fps2.png", type: MediaType.Image },
+      { source: "/images/games/fps/fps3.png", type: MediaType.Image },
+
+    ],
+  },
+  {
     name: "Flappy Bird Clone ",
     description: `Flappy bird like game with a couple menus`,
     genres: ["clones", "..."],
