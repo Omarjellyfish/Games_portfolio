@@ -15,7 +15,8 @@ export enum GameEngine {
   Unity = "Unity",
   Unreal = "Unreal",
   Web="Web",
-  Other="Other"
+  Other="Other",
+  CPP="C++",
 }
 
 export enum MediaType {

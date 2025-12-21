@@ -36,6 +36,35 @@ export const games: Game[] = [
     ],
   },
   {
+    name: "Blind Leap",
+    description: `its a strategic puzzle game where you place walls to direct the player towards the goal
+
+you can equip walls using 1,2,3 num keys
+
+left clicking to place the wall and left clicking to pick it up
+
+red walls are normal bounce walls, green are speed walls, and L shaped walls direct the player in a specific direction
+
+there are currently 5 levels in the game
+
+A game made for a 2 day minijam using SFML and Box2d Only
+    `,
+    genres: ["Puzzles", "Strategy"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.CPP,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Hobafizo/ITI-Game-MiniJam" },
+      { source: LinkImageSource.ItchIo, url: "https://omarjellyfish.itch.io/blind-leap" },
+    ],
+    media: [
+      { source: "/images/games/BlindLeap/Level.png", type: MediaType.Image },
+      { source: "/images/games/BlindLeap/BlindLeap.mp4", type: MediaType.Video },
+      { source: "/images/games/BlindLeap/MainMenu.png", type: MediaType.Image },
+      { source: "/images/games/BlindLeap/Pause.png", type: MediaType.Image },
+    
+    ],
+  },
+  {
     name: "FPS Movement game",
     description: `An FPS game where u have movement mechanics, interactions with the enviroment and abilities.`,
     genres: ["FPS", "Movement"],
