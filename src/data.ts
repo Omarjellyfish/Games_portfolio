@@ -94,7 +94,7 @@ A game made for a 2 day minijam using SFML and Box2d Only
     ],
     media: [
       { source: "/images/games/openGLMaze/maze1.png", type: MediaType.Image },
-      { source: "/images/games/sfmlMaze/maze2.png", type: MediaType.Image },
+      { source: "/images/games/openGLMaze/maze2.png", type: MediaType.Image },
     
     ],
   },
