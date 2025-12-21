@@ -64,40 +64,6 @@ A game made for a 2 day minijam using SFML and Box2d Only
     
     ],
   },
-    {
-    name: "Maze Game using sfml only",
-    description: `A maze game made with sfml and C++ only.
-    `,
-    genres: ["Maze", "C++"],
-    platforms: [Platform.Windows],
-    engine: GameEngine.CPP,
-    links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/MazeGame" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
-    ],
-    media: [
-      { source: "/images/games/sfmlMaze/MazeGame.png", type: MediaType.Image },
-      { source: "/images/games/sfmlMaze/win.png", type: MediaType.Image },
-    
-    ],
-  },
-   {
-    name: "first person Maze Game using OpenGLonly",
-    description: `A maze game made with OpenGL and C++ only.
-    `,
-    genres: ["Maze", "C++"],
-    platforms: [Platform.Windows],
-    engine: GameEngine.CPP,
-    links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/MazeOpenGL" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
-    ],
-    media: [
-      { source: "/images/games/openGLMaze/maze1.png", type: MediaType.Image },
-      { source: "/images/games/openGLMaze/maze2.png", type: MediaType.Image },
-    
-    ],
-  },
   {
     name: "FPS Movement game",
     description: `An FPS game where u have movement mechanics, interactions with the enviroment and abilities.`,
@@ -149,6 +115,40 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/movement/movement.mp4", type: MediaType.Video },
       { source: "/images/games/movement/movement2.png", type: MediaType.Image },
 
+    ],
+  },
+      {
+    name: "Maze Game using sfml only",
+    description: `A maze game made with sfml and C++ only.
+    `,
+    genres: ["Maze", "C++"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.CPP,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/MazeGame" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/sfmlMaze/MazeGame.png", type: MediaType.Image },
+      { source: "/images/games/sfmlMaze/win.png", type: MediaType.Image },
+    
+    ],
+  },
+   {
+    name: "first person Maze Game using OpenGLonly",
+    description: `A maze game made with OpenGL and C++ only.
+    `,
+    genres: ["Maze", "C++"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.CPP,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/MazeOpenGL" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/openGLMaze/maze1.png", type: MediaType.Image },
+      { source: "/images/games/openGLMaze/maze2.png", type: MediaType.Image },
+    
     ],
   },
   {
