@@ -7,7 +7,7 @@ export const PersonalInfo: AboutMeData = {
   description: "Flexibilty and creativity makes me distinct from most developers, with my deep understanding of OOP DS and Algorithms makes me able to find my way through most frameworks. having a vast range of experience in different fields due to my work as an AI data trainer where i completed over 200 tasks and became a reviewer on some projects, proving my adaptability to different enviroments and workflows.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
   cvUri: `${process.env.PUBLIC_URL}/files/Omar Kandil CV.pdf`,
-  uiUri:`${process.env.PUBLIC_URL}/files/UI.pdf`,
+  uiUri: `${process.env.PUBLIC_URL}/files/UI.pdf`,
   links: {
     github: "https://github.com/Omarjellyfish",
     itchIO: "https://NAME.itch.io",
@@ -16,6 +16,44 @@ export const PersonalInfo: AboutMeData = {
 };
 
 export const games: Game[] = [
+  {
+    name: "simple 2d platformer",
+    description: `simple 2d platformer.
+    `,
+    genres: ["Platformer"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
+      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
+      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+    ],
+  },
+
+  {
+    name: "Top-down hotline miami style prototype",
+    description: `Inspired by hotline miami, implementing similar level layout but in a dark enviroment.
+    `,
+    genres: ["Action", "Topdown Shooter", "horror"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
+      { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
+      { source: "/images/games/TopDown/TopDownShooterRoom.png", type: MediaType.Image },
+      { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
+
+    ],
+  },
+
   {
     name: "MATCH MASTER CLONE",
     description: `a puzzle game inspired by Candy Crush, featuring unique abilities such as adjacent tile explosions, same-color chain clears, and row/column bombs.
@@ -32,7 +70,7 @@ export const games: Game[] = [
       { source: "/images/games/Match_Master/matchmaster.mp4", type: MediaType.Video },
       { source: "/images/games/Match_Master/bomb.png", type: MediaType.Image },
       { source: "/images/games/Match_Master/smallboard.png", type: MediaType.Image },
-    
+
     ],
   },
   {
@@ -61,7 +99,7 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/BlindLeap/BlindLeap.mp4", type: MediaType.Video },
       { source: "/images/games/BlindLeap/MainMenu.png", type: MediaType.Image },
       { source: "/images/games/BlindLeap/Pause.png", type: MediaType.Image },
-    
+
     ],
   },
   {
@@ -117,7 +155,7 @@ A game made for a 2 day minijam using SFML and Box2d Only
 
     ],
   },
-      {
+  {
     name: "Maze Game using sfml only",
     description: `A maze game made with sfml and C++ only.
     `,
@@ -131,10 +169,10 @@ A game made for a 2 day minijam using SFML and Box2d Only
     media: [
       { source: "/images/games/sfmlMaze/MazeGame.png", type: MediaType.Image },
       { source: "/images/games/sfmlMaze/win.png", type: MediaType.Image },
-    
+
     ],
   },
-   {
+  {
     name: "first person Maze Game using OpenGLonly",
     description: `A maze game made with OpenGL and C++ only.
     `,
@@ -148,7 +186,7 @@ A game made for a 2 day minijam using SFML and Box2d Only
     media: [
       { source: "/images/games/openGLMaze/maze1.png", type: MediaType.Image },
       { source: "/images/games/openGLMaze/maze2.png", type: MediaType.Image },
-    
+
     ],
   },
   {
