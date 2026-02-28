@@ -28,9 +28,9 @@ export const games: Game[] = [
       { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
     ],
     media: [
-      { source: "/images/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
-      { source: "/images/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
-      { source: "/images/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
+      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
+      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
     ],
   },
 
@@ -48,7 +48,7 @@ export const games: Game[] = [
     media: [
       { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
       { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
-      { source: "/images/games/TopDown/TopDownShooterRoom.png", type: MediaType.Image },
+      { source: "/images/games/TopDown/TopDownRoom.png", type: MediaType.Image },
       { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
 
     ],
