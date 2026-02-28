@@ -15,7 +15,43 @@ export const PersonalInfo: AboutMeData = {
   }
 };
 
-export const games: Game[] = [
+export const games: Game[] = [{
+    name: "simple 2d platformer",
+    description: `simple 2d platformer.
+    `,
+    genres: ["Platformer"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
+      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
+      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+    ],
+  },
+
+  {
+    name: "Top-down hotline miami style prototype",
+    description: `Inspired by hotline miami, implementing similar level layout but in a dark enviroment.
+    `,
+    genres: ["Action", "Topdown Shooter", "horror"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
+      { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
+      { source: "/images/games/TopDown/TopDownRoom.png", type: MediaType.Image },
+      { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
+
+    ],
+  },
   {
     name: "MATCH MASTER CLONE",
     description: `a puzzle game inspired by Candy Crush, featuring unique abilities such as adjacent tile explosions, same-color chain clears, and row/column bombs.
