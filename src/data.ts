@@ -15,100 +15,66 @@ export const PersonalInfo: AboutMeData = {
   }
 };
 
-export const games: Game[] = [{
-    name: "simple 2d platformer",
-    description: `simple 2d platformer.
-    `,
-    genres: ["Platformer"],
+export const games: Game[] = [
+  {
+    name: "Jellyfish Multiplayer horror game",
+    description: `• Developing a multiplayer horror speedrunning game using Unity’s NGO`,
+    genres: ["Multiplayer", "Horror", "Speedrun", "VFX"],
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/NetworkBase" },
+      { source: LinkImageSource.ItchIo, url: "https://www.instagram.com/jellyfish_game_studios/?hl=en" },
     ],
     media: [
-      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
-      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
-      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+      { source: "/images/games/JellyfishHorror/jellyfish.mp4", type: MediaType.Video },
     ],
   },
 
   {
-    name: "Top-down hotline miami style prototype",
-    description: `Inspired by hotline miami, implementing similar level layout but in a dark enviroment.
-    `,
-    genres: ["Action", "Topdown Shooter", "horror"],
+    name: "VR Shooter",
+    description: `• A simple VR shooter game featuring interactive reloading mechanics.`,
+    genres: ["VR", "Shooter", "Action"],
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish" },
     ],
     media: [
-      { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
-      { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
-      { source: "/images/games/TopDown/TopDownRoom.png", type: MediaType.Image },
-      { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
-
-    ],
-  },
-  {
-    name: "simple 2d platformer",
-    description: `simple 2d platformer.
-    `,
-    genres: ["Platformer"],
-    platforms: [Platform.Windows],
-    engine: GameEngine.Unity,
-    links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
-    ],
-    media: [
-      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
-      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
-      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+      { source: "/images/games/VRShooter/VR SHOOTER PROJECT.mp4", type: MediaType.Video },
     ],
   },
 
   {
-    name: "Top-down hotline miami style prototype",
-    description: `Inspired by hotline miami, implementing similar level layout but in a dark enviroment.
-    `,
-    genres: ["Action", "Topdown Shooter", "horror"],
+    name: "Level Editing Project",
+    description: `• A souls-like inspired level design project.
+•  souls like level design and experimental souls-like mechanics.`,
+    genres: ["Level Design", "Souls-like", "RPG"],
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish" },
     ],
     media: [
-      { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
-      { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
-      { source: "/images/games/TopDown/TopDownRoom.png", type: MediaType.Image },
-      { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
-
+      { source: "/images/games/LevelEditing/Project Final 1.mp4", type: MediaType.Video },
     ],
   },
 
   {
-    name: "MATCH MASTER CLONE",
-    description: `a puzzle game inspired by Candy Crush, featuring unique abilities such as adjacent tile explosions, same-color chain clears, and row/column bombs.
-    `,
-    genres: ["Puzzles", "Matching"],
+    name: "Unreal Turret Project",
+    description: `• A simple Blueprint-only project in Unreal Engine.
+• Features an automated AI turret system that tracks and shoots targets.`,
+    genres: ["Unreal Engine", "Blueprints", "AI"],
     platforms: [Platform.Windows],
-    engine: GameEngine.Unity,
+    engine: GameEngine.Unreal,
     links: [
-      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
-      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish" },
     ],
     media: [
-      { source: "/images/games/Match_Master/bigboard.png", type: MediaType.Image },
-      { source: "/images/games/Match_Master/matchmaster.mp4", type: MediaType.Video },
-      { source: "/images/games/Match_Master/bomb.png", type: MediaType.Image },
-      { source: "/images/games/Match_Master/smallboard.png", type: MediaType.Image },
-
+      { source: "/images/games/UnrealTurret/Unreal turret project .mp4", type: MediaType.Video },
     ],
   },
+
   {
     name: "Blind Leap",
     description: `its a strategic puzzle game where you place walls to direct the player towards the goal
@@ -135,9 +101,83 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/BlindLeap/BlindLeap.mp4", type: MediaType.Video },
       { source: "/images/games/BlindLeap/MainMenu.png", type: MediaType.Image },
       { source: "/images/games/BlindLeap/Pause.png", type: MediaType.Image },
-
     ],
   },
+
+  {
+    name: "simple 2d platformer",
+    description: `simple 2d platformer.
+    `,
+    genres: ["Platformer"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
+      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
+      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+    ],
+  },
+
+  {
+    name: "Top-down hotline miami style prototype",
+    description: `Inspired by hotline miami, implementing similar level layout but in a dark enviroment.
+    `,
+    genres: ["Action", "Topdown Shooter", "horror"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
+      { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
+      { source: "/images/games/TopDown/TopDownRoom.png", type: MediaType.Image },
+      { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
+    ],
+  },
+
+  {
+    name: "Mini Puzzle Scene",
+    description: `Simple puzzle game with focus on audio and vibe`,
+    genres: ["Puzzles", "VFX", "Cinematics", "Audio Design"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/MiniPuzzle/puzzle1.jpg", type: MediaType.Image },
+      { source: "/images/games/MiniPuzzle/puzzle2.jpg", type: MediaType.Image },
+      { source: "/images/games/MiniPuzzle/puzzle.mp4", type: MediaType.Video },
+      { source: "/images/games/MiniPuzzle/puzzle3.jpg", type: MediaType.Image },
+    ],
+  },
+
+  {
+    name: "MATCH MASTER CLONE",
+    description: `a puzzle game inspired by Candy Crush, featuring unique abilities such as adjacent tile explosions, same-color chain clears, and row/column bombs.
+    `,
+    genres: ["Puzzles", "Matching"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/Match_Master/bigboard.png", type: MediaType.Image },
+      { source: "/images/games/Match_Master/matchmaster.mp4", type: MediaType.Video },
+      { source: "/images/games/Match_Master/bomb.png", type: MediaType.Image },
+      { source: "/images/games/Match_Master/smallboard.png", type: MediaType.Image },
+    ],
+  },
+
   {
     name: "FPS Movement game",
     description: `An FPS game where u have movement mechanics, interactions with the enviroment and abilities.`,
@@ -153,9 +193,9 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/fps/fps.mp4", type: MediaType.Video },
       { source: "/images/games/fps/fps2.png", type: MediaType.Image },
       { source: "/images/games/fps/fps3.png", type: MediaType.Image },
-
     ],
   },
+
   {
     name: "Flappy Bird Clone ",
     description: `Flappy bird like game with a couple menus`,
@@ -171,9 +211,9 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/Flappy/flappy.mp4", type: MediaType.Video },
       { source: "/images/games/Flappy/flappy_end.png", type: MediaType.Image },
       { source: "/images/games/Flappy/flappy_scene.png", type: MediaType.Image },
-
     ],
   },
+
   {
     name: "Movement and mechanics prototype ",
     description: `simple movement game including walljumping with grapple rope(grabs objects), box launching and a flashbang`,
@@ -188,9 +228,9 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/movement/movement1.png", type: MediaType.Image },
       { source: "/images/games/movement/movement.mp4", type: MediaType.Video },
       { source: "/images/games/movement/movement2.png", type: MediaType.Image },
-
     ],
   },
+
   {
     name: "Maze Game using sfml only",
     description: `A maze game made with sfml and C++ only.
@@ -205,9 +245,9 @@ A game made for a 2 day minijam using SFML and Box2d Only
     media: [
       { source: "/images/games/sfmlMaze/MazeGame.png", type: MediaType.Image },
       { source: "/images/games/sfmlMaze/win.png", type: MediaType.Image },
-
     ],
   },
+
   {
     name: "first person Maze Game using OpenGLonly",
     description: `A maze game made with OpenGL and C++ only.
@@ -222,9 +262,9 @@ A game made for a 2 day minijam using SFML and Box2d Only
     media: [
       { source: "/images/games/openGLMaze/maze1.png", type: MediaType.Image },
       { source: "/images/games/openGLMaze/maze2.png", type: MediaType.Image },
-
     ],
   },
+
   {
     name: "Web battleship game ",
     description: `classic battle ship game made with html css js`,
@@ -239,9 +279,9 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/battleship/battle1.png", type: MediaType.Image },
       { source: "/images/games/battleship/battleship.mp4", type: MediaType.Video },
       { source: "/images/games/battleship/battle2.png", type: MediaType.Image },
-
     ],
   },
+
   {
     name: "offline dino game ",
     description: `chrome dino game using python with opengl and turtle`,
@@ -257,7 +297,6 @@ A game made for a 2 day minijam using SFML and Box2d Only
       { source: "/images/games/dino/dino.mp4", type: MediaType.Video },
       { source: "/images/games/dino/dino2.png", type: MediaType.Image },
       { source: "/images/games/dino/dino3.png", type: MediaType.Image },
-
     ],
   }
 ];
