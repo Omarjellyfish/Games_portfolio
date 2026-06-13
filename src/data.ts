@@ -3,8 +3,8 @@ import { AboutMeData, Game, GameEngine, LinkImageSource, MediaType, Platform } f
 export const PersonalInfo: AboutMeData = {
   name: "Omar Kandil",
   role: "Unity Game Developer",
-  introduction: "Trained at ATHR as a game developer with unity. Experience as an AI data trainer and a MERN stack trainee at DEPI.",
-  description: "Flexibilty and creativity makes me distinct from most developers, with my deep understanding of OOP DS and Algorithms makes me able to find my way through most frameworks. having a vast range of experience in different fields due to my work as an AI data trainer where i completed over 200 tasks and became a reviewer on some projects, proving my adaptability to different enviroments and workflows.",
+  introduction: "Game Developer with a dream of opening his own studio.",
+  description: "focused on creating unique experiences, currently targeting Multiplayer game development as well as General Game Development, Interested in VFX creation using shadergraph and particle systems , With proven experience in AI-Training@outlier   Focused on learning and improving to acquire the skillset to achieve my dream of opening my own game studio.",
   image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
   cvUri: `${process.env.PUBLIC_URL}/files/Omar Kandil CV.pdf`,
   uiUri: `${process.env.PUBLIC_URL}/files/UI.pdf`,
@@ -15,7 +15,43 @@ export const PersonalInfo: AboutMeData = {
   }
 };
 
-export const games: Game[] = [
+export const games: Game[] = [{
+    name: "simple 2d platformer",
+    description: `simple 2d platformer.
+    `,
+    genres: ["Platformer"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/2D-Platformer/2D-Platformer-Jump.png", type: MediaType.Image },
+      { source: "/images/games/2D-Platformer/2D-Platformer.mp4", type: MediaType.Video },
+      { source: "/images/games/2D-Platformer/2D-Platformer-JumpZone.png", type: MediaType.Image },
+    ],
+  },
+
+  {
+    name: "Top-down hotline miami style prototype",
+    description: `Inspired by hotline miami, implementing similar level layout but in a dark enviroment.
+    `,
+    genres: ["Action", "Topdown Shooter", "horror"],
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unity,
+    links: [
+      { source: LinkImageSource.Github, url: "https://github.com/Omarjellyfish/match-master" },
+      { source: LinkImageSource.ItchIo, url: "https://YOUR_ITCH.itch.io/GAME_NAME" },
+    ],
+    media: [
+      { source: "/images/games/TopDown/TopDownEnemies.png", type: MediaType.Image },
+      { source: "/images/games/TopDown/TopdownShooter.mp4", type: MediaType.Video },
+      { source: "/images/games/TopDown/TopDownRoom.png", type: MediaType.Image },
+      { source: "/images/games/Topdown/TopDownShooterCar.png", type: MediaType.Image },
+
+    ],
+  },
   {
     name: "simple 2d platformer",
     description: `simple 2d platformer.
