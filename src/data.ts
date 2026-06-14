@@ -10,7 +10,7 @@ export const PersonalInfo: AboutMeData = {
   uiUri: `${process.env.PUBLIC_URL}/files/UI.pdf`,
   links: {
     github: "https://github.com/Omarjellyfish",
-    itchIO: "https://NAME.itch.io",
+    itchIO: "https://omarjellyfish.itch.io/",
     linkedIn: "https://www.linkedin.com/in/omar-kandil-jf/",
   }
 };
