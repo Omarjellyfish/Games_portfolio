@@ -67,6 +67,19 @@ export const Thumbnail = styled.img<{ $isSelected: boolean }>`
   transition: transform 0.1s ease-in-out;
 `;
 
+export const ThumbnailVideo = styled.video<{ $isSelected: boolean }>`
+  width: 80px;
+  max-height: 120px;
+  min-height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid
+    ${({ $isSelected }) => ($isSelected ? "#4e9f3d" : "transparent")};
+  transform: ${({ $isSelected }) => ($isSelected ? "scale(1.1)" : "none")};
+  transition: transform 0.1s ease-in-out;
+`;
+
 export const PlayIcon = styled.button`
   position: absolute;
   width: 36px;
@@ -139,7 +152,7 @@ const getVideoThumbnail = () => "/video-thumbnail.png"; // 👈 place a default 
 // ============ Component ============
 const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
   const thumbnailsContainerRef = useRef<HTMLDivElement | null>(null);
-  const thumbnailRefs = useRef<(HTMLImageElement | null)[]>([]);
+  const thumbnailRefs = useRef<(HTMLElement | null)[]>([]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
@@ -187,13 +200,25 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
 
             return (
               <ThumbnailWrapper key={index}>
-                <Thumbnail
-                  id={`thumbnail${index}`}
-                  ref={(el) => (thumbnailRefs.current[index] = el)}
-                  src={thumbnailSrc}
-                  $isSelected={index === currentIndex}
-                  onClick={() => handleThumbnailClick(index)}
-                />
+                {isLocalVideo ? (
+                  <ThumbnailVideo
+                    id={`thumbnail${index}`}
+                    ref={(el) => (thumbnailRefs.current[index] = el)}
+                    src={`${process.env.PUBLIC_URL}${item.source}#t=0.1`}
+                    $isSelected={index === currentIndex}
+                    onClick={() => handleThumbnailClick(index)}
+                    preload="metadata"
+                    muted
+                  />
+                ) : (
+                  <Thumbnail
+                    id={`thumbnail${index}`}
+                    ref={(el) => (thumbnailRefs.current[index] = el)}
+                    src={thumbnailSrc}
+                    $isSelected={index === currentIndex}
+                    onClick={() => handleThumbnailClick(index)}
+                  />
+                )}
                 {(isYouTubeVideo || isLocalVideo) && (
                   <PlayIcon onClick={() => handleThumbnailClick(index)} />
                 )}
