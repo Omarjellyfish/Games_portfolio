@@ -143,7 +143,7 @@ A game made for a 2 day minijam using SFML and Box2d Only
 
   {
     name: "Mini Puzzle Scene",
-    description: `Simple puzzle game with focus on audio and vibe`,
+    description: `Simple puzzle game with focus on audio and vibe.`,
     genres: ["Puzzles", "VFX", "Cinematics", "Audio Design"],
     platforms: [Platform.Windows],
     engine: GameEngine.Unity,
